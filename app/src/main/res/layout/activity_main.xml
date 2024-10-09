@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/et_pokemon_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Pokémon ID"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Pokémon" />
+    <TextView
+        android:id="@+id/tv_pokemon_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pokémon Details will appear here"
+        android:paddingTop="16dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sprites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
